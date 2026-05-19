@@ -1,0 +1,15 @@
+#hero-section{
+    gap: 4px;
+    color: var(--branco)
+}
+
+#destaques-div{
+    width: 70%;
+    padding: 1rem;
+    background-color: var(--roxo);
+}
+
+#destaques-lista-div{
+    width: 30%;
+    padding: 1rem;
+}
