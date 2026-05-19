@@ -1,15 +1,80 @@
-#hero-section{
+#hero-section {
     gap: 4px;
     color: var(--branco)
 }
 
-#destaques-div{
+#destaques-div {
     width: 70%;
+    height: 30rem;
     padding: 1rem;
     background-color: var(--roxo);
+    background-image: url('../assets/jogosImg/repo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    border-radius: var(--border-radius-sm);
 }
 
-#destaques-lista-div{
+#destaques-lista-div {
+    gap: 1rem;
+}
+
+#destaques-lista-div {
     width: 30%;
     padding: 1rem;
+}
+
+#destaques-tags-div{
+    gap: 1rem;
+}
+
+.tag-div{
+    background-color: var(--cinza);
+    padding: 6px 8px;
+    color: var(--preto);
+    border-radius: var(--border-radius-sm);
+    font-weight: bold;
+}
+
+#info-jogo {
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    justify-content: space-between;
+    border-radius: var(--border-radius-sm);
+    border: solid 2px var(--roxo);
+    align-items: center;
+}
+
+.destaques-items-div {
+    border: solid 1px var(--roxo);
+    height: 8rem;
+    padding: 10px;
+    border-radius: var(--border-radius-sm);
+    gap: 1rem;
+}
+
+.destaques-items-div img {
+    width: 30%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    #hero-section {
+        flex-direction: column;
+    }
+
+    #destaques-div {
+        width: 100%;
+    }
+
+    #info-jogo {
+        flex-direction: column;
+    }
+
+    #destaques-lista-div {
+        width: 100%;
+    }
 }

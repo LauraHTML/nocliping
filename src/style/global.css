@@ -3,6 +3,9 @@
   --verde: #eaf51a;
   --preto: #222222;
   --branco: #ecebf0;
+  --cinza: #d8d8d8;
+
+  --border-radius-sm: 10px;
 }
 
 .flex-row {
@@ -15,6 +18,10 @@
   flex-direction: column;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,8 +31,9 @@
 h1,h2,h3{
     font-family: "Climate Crisis", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
+  letter-spacing: 2px;
   font-variation-settings:
     "YEAR" 1979;
 }
@@ -38,6 +46,10 @@ p, span, a, li{
 
 body {
   background: var(--preto);
+}
+
+main{
+  margin: 0 1rem;
 }
 
 /* navbar */
@@ -90,6 +102,25 @@ header {
   height: 3px;
   background: var(--branco);
   border-radius: 5px;
+}
+
+.btn-default{
+  background-color: var(--verde);
+  padding: 6px 1rem;
+  border-radius: var(--border-radius-sm);
+  border: none;
+  width: fit-content;
+  font-weight: bold;
+}
+
+.btn-secondary{
+  background-color: transparent;
+  padding: 6px 1rem;
+  border-radius: var(--border-radius-sm);
+  border: solid 3px var(--verde);
+  width: fit-content;
+  font-weight: bold;
+  color: var(--verde);
 }
 
 /* footer */
