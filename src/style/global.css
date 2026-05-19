@@ -1,0 +1,18 @@
+:root{
+    --roxo: #bfc0f4;
+    --verde: #EAF51A;
+    --preto: #222222;
+    --branco: #ECEBF0;
+
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
