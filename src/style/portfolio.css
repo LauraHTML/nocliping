@@ -1,0 +1,209 @@
+#cta {
+    color: var(--branco);
+    gap: 2rem;
+    margin-bottom: 1rem;
+    height: 40rem;
+}
+
+small {
+    background-color: var(--roxo-300);
+    padding: 4px 1rem;
+    border-radius: var(--border-radius-md);
+    color: var(--verde);
+    font-weight: 600;
+}
+
+.card-terror {
+    background-image: linear-gradient(#374BF3, #4f6dec);
+    transform: rotate(-10deg) translateY(20px);
+    margin-right: -30px;
+}
+
+.card-combate {
+    background-image: linear-gradient(#fb626f, #f03b46);
+    transform: rotate(-5deg) translateY(10px);
+    margin-right: -10px;
+}
+
+.card-aventura {
+    background-image: linear-gradient(#2CCBF2, #4D82CE);
+    transform: translateY(0);
+    z-index: 10;
+}
+
+.card-multiplayer {
+    background-image: linear-gradient(#24CECB, #2de1b3);
+    transform: rotate(5deg) translateY(10px);
+    margin-left: -10px;
+}
+
+.card-indie {
+    background-image: linear-gradient(#7449F2, #9d5ff3);
+    transform: rotate(10deg) translateY(20px);
+    margin-left: -30px;
+}
+
+
+#card-categoria {
+    padding: 1rem;
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--branco);
+    min-width: 240px;
+    max-width: 300px;
+    width: 10rem;
+    gap: -30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px 11px rgba(0, 0, 0, 0.20);
+}
+
+#card-categoria:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+    z-index: 10;
+}
+
+#img-personagem {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+#stack-cards-row {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    margin-top: 1rem;
+    align-items: start;
+    color: var(--branco);
+    gap: 1rem;
+}
+
+.section-grid {
+    margin-top: 1rem;
+    width: 100%;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    justify-content: center;
+}
+
+#inventario-sobre {
+    background-color: #3B3E5B;
+    padding: 2rem;
+    border-radius: var(--border-radius-sm);
+    gap: 1rem;
+}
+
+#noclipping-logo {
+    border: solid 2px var(--branco);
+    width: 100%;
+    padding: 1rem;
+    border-radius: var(--border-radius-sm);
+    margin-bottom: 1rem;
+}
+
+#noclipping-logo ul{
+    list-style: none;
+}
+
+#noclipping-logo img {
+    height: 100%;
+    width: 6rem;
+}
+
+#sobre {
+    border: solid 2px var(--branco);
+    border-radius: var(--border-radius-sm);
+    padding: 1rem;
+    background-image:
+        linear-gradient(to right, #cccccc48 1px, transparent 1px),
+        linear-gradient(to bottom, #cccccc48 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+#coluna-inventario {
+    gap: 2rem;
+}
+
+.level-bar {
+    display: flex;
+    gap: 4px;
+    background: var(--roxo);
+    padding: 4px;
+    border-radius: 8px;
+    width: 16rem;
+    margin: 12px 0;
+}
+
+.preenchimento-level-bar {
+    width: 100%;
+    height: 25px;
+    background: var(--preto);
+    border-radius: 4px;
+    background-image:
+        linear-gradient(to right, #cccccc48 1px, transparent 1px),
+        linear-gradient(to bottom, #cccccc48 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.cem-porcento{
+    width: 95%;
+}
+.cinquenta-porcento{
+    width: 50%;
+}
+
+#icones-diferenciais {
+    gap: 1rem;
+}
+
+#icone-img {
+    padding: 1rem;
+    border: solid 2px var(--branco);
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    #stack-cards-row {
+        gap: 10px
+    }
+
+    #card-categoria {
+        box-shadow: none;
+    }
+
+    .card-terror {
+        transform: translateY(0);
+        margin-right: 0;
+    }
+
+    .card-combate {
+        transform: translateY(0);
+        margin-right: 0;
+    }
+
+    .card-aventura {
+        transform: translateY(0);
+        z-index: 10;
+    }
+
+    .card-multiplayer {
+        transform: translateY(0);
+        margin-left: 0;
+    }
+
+    .card-indie {
+        transform: translateY(0);
+        margin-left: 0;
+    }
+
+    #inventario-sobre {
+        flex-direction: column;
+    }
+}
