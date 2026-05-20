@@ -1,8 +1,11 @@
 #cta {
     color: var(--branco);
     gap: 2rem;
-    margin-bottom: 1rem;
-    height: 40rem;
+    margin-bottom: 6rem;
+
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
 small {
@@ -106,7 +109,7 @@ section {
     margin-bottom: 1rem;
 }
 
-#noclipping-logo ul{
+#noclipping-logo ul {
     list-style: none;
 }
 
@@ -150,11 +153,12 @@ section {
     background-size: 40px 40px;
 }
 
-.cem-porcento{
+.cem-porcento {
     width: 95%;
 }
-.cinquenta-porcento{
-    width: 50%;
+
+#diferenciais {
+    width: 100%;
 }
 
 #icones-diferenciais {
@@ -168,10 +172,25 @@ section {
     margin: 1rem;
 }
 
+#diferencial-texto {
+    background-color: var(--roxo);
+    padding: 1rem;
+    border-radius: var(--border-radius-sm);
+    color: var(--preto);
+}
+
+
+
 @media (max-width: 768px) {
 
     #stack-cards-row {
-        gap: 10px
+        height: fit-content;
+        gap: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        align-items: center;
+        justify-content: center;
     }
 
     #card-categoria {
