@@ -1,6 +1,6 @@
 #hero-section {
     gap: 4px;
-    color: var(--branco)
+    color: var(--text-color)
 }
 
 #destaques-div {
@@ -25,13 +25,16 @@
 }
 
 #destaques-tags-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 8rem);
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .tag-div{
     background-color: var(--cinza);
     padding: 6px 8px;
-    color: var(--preto);
+    color: var(--text-color);
     border-radius: var(--border-radius-sm);
     font-weight: bold;
 }
@@ -59,11 +62,12 @@
 .destaques-items-div img {
     width: 30%;
     height: 100%;
+    border-radius: var(--border-radius-sm);
 }
 
 section{
     align-items: start;
-    color: var(--branco);
+    color: var(--text-color);
     gap: 1rem;
 }
 
@@ -80,16 +84,25 @@ section{
     #hero-section {
         flex-direction: column;
     }
-
     #destaques-div {
         width: 100%;
+    }
+    .texto {
+        word-break: break-all;  
+    }
+    #destaques-lista-div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .destaques-items-div {
+        flex-direction: column;
+        height: auto; 
+        word-break: break-all;  
     }
 
     #info-jogo {
         flex-direction: column;
-    }
-
-    #destaques-lista-div {
-        width: 100%;
     }
 }

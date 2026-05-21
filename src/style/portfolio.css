@@ -1,5 +1,5 @@
 #cta {
-    color: var(--branco);
+    color: var(--text-color);
     gap: 2rem;
     margin-bottom: 6rem;
 
@@ -80,7 +80,7 @@ small {
 section {
     margin-top: 1rem;
     align-items: start;
-    color: var(--branco);
+    color: var(--text-color);
     gap: 1rem;
 }
 
@@ -176,13 +176,10 @@ section {
     background-color: var(--roxo);
     padding: 1rem;
     border-radius: var(--border-radius-sm);
-    color: var(--preto);
+    color: var(--text-color-lighr);
 }
 
-
-
 @media (max-width: 768px) {
-
     #stack-cards-row {
         height: fit-content;
         gap: 10px;
@@ -192,11 +189,9 @@ section {
         align-items: center;
         justify-content: center;
     }
-
     #card-categoria {
         box-shadow: none;
     }
-
     .card-terror {
         transform: translateY(0);
         margin-right: 0;

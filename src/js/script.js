@@ -5,3 +5,8 @@ const menuBtn = document.getElementById("menuBtn");
       navLinks.classList.toggle("active");
       menuBtn.classList.toggle('open');
     });
+
+const themeToogle = document.getElementById('theme');
+themeToogle.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode')
+})

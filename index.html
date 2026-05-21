@@ -28,6 +28,9 @@
         <li><a href="/pages/portfolio.html">Portfólio</a></li>
         <li><a href="/pages/sobre.html">Sobre</a></li>
         <li><a href="/pages/contato.html">Contato</a></li>
+        <li><button class="mode" id="theme">
+          <img src="./src/assets/icones/light-mode.svg" alt="ícone do modo claro">
+        </button></li>
       </ul>
 
       <div class="menu-btn" id="menuBtn">
@@ -41,7 +44,8 @@
 
     <section id="hero-section" class="flex-row">
       <div id="destaques-div" class="flex-col ">
-        <div id="destaques-tags-div" class="flex-row">
+        <div class="flex-col gap-4">
+        <div id="destaques-tags-div">
           <div class="tag-div">
             <p>Cooperativo</p>
           </div>
@@ -52,7 +56,8 @@
             <p>Exploração</p>
           </div>
         </div>
-        <h2>R.E.P.O</h2>
+        <h2>R.E.P.O</h2>  
+        </div>
         <div id="info-jogo" class="flex-row">
           <div>
             <h3>Desconto de 45%</h3>
@@ -69,21 +74,21 @@
         <h2>Outros Jogos com desconto: </h2>
         <div class="destaques-items-div flex-row">
           <img src="./src/assets/jogosImg/dispatch.jpg" alt="Capa do jogo: Dispatch">
-          <div class="flex-col justify-between">
+          <div class="flex-col justify-between v">
             <h3>Dispatch</h3>
             <button class="btn-default">Ver na loja</button>
           </div>
         </div>
         <div class="destaques-items-div flex-row">
           <img src="./src/assets/jogosImg/cultOfTheLamb.jpg" alt="Capa do jogo: Cult of the lamb">
-          <div class="flex-col justify-between">
+          <div class="flex-col justify-between texto">
             <h3>Cult of the lamb</h3>
             <button class="btn-default">Ver na loja</button>
           </div>
         </div>
         <div class="destaques-items-div flex-row">
           <img src="./src/assets/jogosImg/subnautica2.jpg" alt="Capa do jogo: Subnautica 2">
-          <div class="flex-col justify-between">
+          <div class="flex-col justify-between texto">
             <h3>Subnautica 2</h3>
             <button class="btn-default">Ver na loja</button>
           </div>
@@ -261,6 +266,7 @@
     <div class="footer-container">
       <div class="footer-logo">
         <h2>NoClipping</h2>
+        <img src="./src/assets/jogosImg/cultOfTheLamb.jpg" alt="Desenho" id="img-pixel-art">
       </div>
 
       <div class="footer-links">
@@ -282,7 +288,20 @@
         </ul>
       </div>
     </div>
-
+    <div id="icones" class="flex-row">
+      <div class="icone"></div>
+      <div class="icone"></div>
+      <div class="icone"></div>
+      <div class="icone"></div>
+      <div class="icone"></div>
+      <div class="icone"></div>
+      <div class="icone"></div>
+      <div class="icone"></div>
+      <div class="icone"></div>
+      <div class="icone"></div>
+      <div class="icone"></div>
+      <div class="icone"></div>
+    </div>
     <div class="footer-bottom">
       <p>© 2026 NoClipping - Todos os direitos reservados.</p>
     </div>
