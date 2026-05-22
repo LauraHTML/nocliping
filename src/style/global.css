@@ -52,6 +52,12 @@ li {
   font-style: normal;
 }
 
+strong, label{
+  font-family: "Space Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
 body {
   background: var(--preto);
 }

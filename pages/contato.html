@@ -6,6 +6,14 @@
     <title>NoClipping | Contato</title>
     <link rel="shortcut icon" type="imagex/svg" href="../src/assets/favicon.svg">
     <link rel="stylesheet" href="../src/style/global.css" />
+    <link rel="stylesheet" href="../src/style/contato.css" />
+
+    <!-- fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 </head>
 <body>
     <header>
@@ -26,7 +34,58 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main class="contact-container">
+            <section class="contact-info">
+                <h2>Suporte ao Jogador</h2>
+                <p>Com o que você precisa de ajuda? Mande um sinal para nós e responderemos antes do seu próximo respawn.</p>
+                
+                <div class="info-item">
+                    <strong>Email:</strong>
+                    <span>suporte@nocipping.com.br</span>
+                </div>
+                <div class="info-item">
+                    <strong>Discord:</strong>
+                    <span>discord.gg/nocipping</span>
+                </div>
+                <div class="info-item">
+                    <span>Telefone:</strong>
+                    <span>(11) 4002-8922</span>
+                </div>
+            </section>
+
+            <section class="contact-form-section">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="input-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nickname..." required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email de Login</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Selecione sua quest...</option>
+                            <option value="suporte">Suporte Técnico</option>
+                            <option value="reembolso">Reembolsos & Devoluções</option>
+                            <option value="parceria">Parcerias / Criadores de Conteúdo</option>
+                            <option value="outros">Outros Assuntos</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Descreva sua situação aqui..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn"><strong>ENVIAR MENSAGEM</strong></button>
+                </form>
+            </section>
+        </main>
+
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-logo">
@@ -53,6 +112,7 @@
         </div>
       </div>
 
+    </div>
       <div class="footer-bottom">
         <p>© 2026 NoClipping - Todos os direitos reservados.</p>
       </div>

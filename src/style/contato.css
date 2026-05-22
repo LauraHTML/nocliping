@@ -1,0 +1,197 @@
+/* =========================================
+   VARIÁVEIS DE CORES E TEMA
+   ========================================= */
+:root {
+    /* Cores da Marca */
+    --neon-yellow: #eaf51a;
+    --neon-purple: #bfc0f4;
+    
+    /* Tema Escuro (Padrão) */
+    --bg-color: #0f0f13;
+    --surface-color: #1a1a24;
+    --text-primary: #f0f0f0;
+    --text-secondary: #a0a0b5;
+    --input-bg: #252533;
+    --border-color: #333344;
+    
+    /* Cores de Destaque no Dark Mode */
+    --accent-color: var(--neon-yellow);
+    --accent-hover: #c4d015;
+    --text-accent: var(--neon-yellow);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* =========================================
+   CABEÇALHO
+   ========================================= */
+.store-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.store-header h1 {
+    font-size: 3rem;
+    letter-spacing: -1px;
+    color: var(--text-primary);
+}
+
+.store-header .highlight {
+    color: var(--text-accent);
+}
+
+.store-header p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+/* =========================================
+   LAYOUT DE CONTATO (GRID)
+   ========================================= */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    background-color: var(--surface-color);
+    padding: 3rem;
+    border-radius: 8px;
+    border-top: 4px solid var(--neon-purple);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================
+   INFORMAÇÕES DE CONTATO
+   ========================================= */
+.contact-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--neon-purple);
+}
+
+.contact-info p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.info-item strong {
+    display: block;
+    color: var(--neon-purple);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.3rem;
+}
+
+.info-item span {
+    font-size: 1.1rem;
+    font-family: "Space Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* =========================================
+   FORMULÁRIO
+   ========================================= */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px rgba(234, 245, 26, 0.15); /* Brilho neon sutil */
+}
+
+/* =========================================
+   BOTÃO DE SUBMIT
+   ========================================= */
+.submit-btn {
+    margin-top: 1rem;
+    padding: 1.2rem;
+    background-color: var(--accent-color);
+    color: #121212; /* Texto sempre escuro no botão amarelo para contraste */
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-hover);
+    box-shadow: 0 0 20px rgba(234, 245, 26, 0.4); /* Glow mais forte no hover */
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   RESPONSIVIDADE
+   ========================================= */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+    
+    .store-header h1 {
+        font-size: 2.5rem;
+    }
+}
