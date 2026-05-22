@@ -34,7 +34,7 @@
 .tag-div{
     background-color: var(--cinza);
     padding: 6px 8px;
-    color: var(--text-color);
+    color: var(--preto);
     border-radius: var(--border-radius-sm);
     font-weight: bold;
 }
