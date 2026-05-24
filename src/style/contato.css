@@ -1,12 +1,10 @@
-/* =========================================
-   VARIÁVEIS DE CORES E TEMA
-   ========================================= */
-:root {
-    /* Cores da Marca */
+
+/* :root {
+   
     --neon-yellow: #eaf51a;
     --neon-purple: #bfc0f4;
     
-    /* Tema Escuro (Padrão) */
+  
     --bg-color: #0f0f13;
     --surface-color: #1a1a24;
     --text-primary: #f0f0f0;
@@ -14,11 +12,11 @@
     --input-bg: #252533;
     --border-color: #333344;
     
-    /* Cores de Destaque no Dark Mode */
+   
     --accent-color: var(--neon-yellow);
     --accent-hover: #c4d015;
     --text-accent: var(--neon-yellow);
-}
+} */
 
 * {
     margin: 0;
@@ -28,7 +26,7 @@
 
 body {
     background-color: var(--bg-color);
-    color: var(--text-primary);
+    color: var(--text-color);
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -51,30 +49,26 @@ body {
 .store-header h1 {
     font-size: 3rem;
     letter-spacing: -1px;
-    color: var(--text-primary);
+    color: var(--text-color);
 }
 
 .store-header .highlight {
-    color: var(--text-accent);
+    color: var(--roxo);
 }
 
 .store-header p {
-    color: var(--text-secondary);
+    color: var(--text-color);
     font-size: 1.1rem;
     margin-top: 0.5rem;
 }
 
-/* =========================================
-   LAYOUT DE CONTATO (GRID)
-   ========================================= */
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 3rem;
-    background-color: var(--surface-color);
     padding: 3rem;
     border-radius: 8px;
-    border-top: 4px solid var(--neon-purple);
+    border-top: 4px solid #bfc0f4;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -84,23 +78,23 @@ body {
 .contact-info h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: var(--neon-purple);
+    color: #bfc0f4;
 }
 
 .contact-info p {
-    color: var(--text-secondary);
+    color: var(--text-color);
     margin-bottom: 2rem;
 }
 
 .info-item {
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid #333344;
 }
 
 .info-item strong {
     display: block;
-    color: var(--neon-purple);
+    color: #bfc0f4;
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 1px;
@@ -132,7 +126,7 @@ body {
 .input-group label {
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: var(--text-color);
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -142,9 +136,9 @@ body {
 .input-group textarea {
     width: 100%;
     padding: 1rem;
-    background-color: var(--input-bg);
-    border: 1px solid var(--border-color);
-    color: var(--text-primary);
+    background-color: #252533;
+    border: 1px solid #333344;
+    color: var(--text-color);
     border-radius: 4px;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -154,18 +148,15 @@ body {
 .input-group input:focus,
 .input-group select:focus,
 .input-group textarea:focus {
-    border-color: var(--accent-color);
-    box-shadow: 0 0 10px rgba(234, 245, 26, 0.15); /* Brilho neon sutil */
+    border-color: var(--verde);
+    box-shadow: 0 0 10px rgba(234, 245, 26, 0.15); 
 }
 
-/* =========================================
-   BOTÃO DE SUBMIT
-   ========================================= */
 .submit-btn {
     margin-top: 1rem;
     padding: 1.2rem;
-    background-color: var(--accent-color);
-    color: #121212; /* Texto sempre escuro no botão amarelo para contraste */
+    background-color: var(--verde);
+    color: #121212; 
     border: none;
     border-radius: 4px;
     font-size: 1rem;
@@ -177,14 +168,11 @@ body {
 }
 
 .submit-btn:hover {
-    background-color: var(--accent-hover);
-    box-shadow: 0 0 20px rgba(234, 245, 26, 0.4); /* Glow mais forte no hover */
+    background-color: var(--verde);
+    box-shadow: 0 0 20px rgba(234, 245, 26, 0.4); 
     transform: translateY(-2px);
 }
 
-/* =========================================
-   RESPONSIVIDADE
-   ========================================= */
 @media (max-width: 768px) {
     .contact-container {
         grid-template-columns: 1fr;
