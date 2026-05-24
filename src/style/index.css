@@ -80,6 +80,26 @@ section{
     justify-content: center;
 }
 
+.card-terror {
+    background-image: linear-gradient(#374BF3, #4f6dec);
+}
+
+.card-combate {
+    background-image: linear-gradient(#fb626f, #f03b46);
+}
+
+.card-aventura {
+    background-image: linear-gradient(#2CCBF2, #4D82CE);
+}
+
+.card-multiplayer {
+    background-image: linear-gradient(#24CECB, #2de1b3);
+}
+
+.card-indie {
+    background-image: linear-gradient(#7449F2, #9d5ff3);
+}
+
 @media (max-width: 768px) {
     #hero-section {
         flex-direction: column;

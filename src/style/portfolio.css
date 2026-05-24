@@ -176,7 +176,11 @@ section {
     background-color: var(--roxo);
     padding: 1rem;
     border-radius: var(--border-radius-sm);
-    color: var(--text-color-lighr);
+    color: var(--preto);
+}
+
+#diferencial-texto ul{
+    list-style: none;
 }
 
 @media (max-width: 768px) {
